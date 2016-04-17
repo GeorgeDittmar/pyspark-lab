@@ -1,6 +1,9 @@
 '''
 Author: George Dittmar
 Date:   04/16/2016
+
+Example of reading in 1 csv file and scrubbing out the ip address contained in the data and then saving the scrubbed data
+back out to a new file.
 '''
 
 from pyspark import SparkContext
