@@ -10,7 +10,7 @@ from pyspark import SparkContext
 # setup spark context
 sc = SparkContext("local", "Simple App")
 
-
+# caching stores in memory and is useful if you need to access this object a lot
 chapter = sc.textFile('../resources/sample.txt').cache()
 
 # remember that spark is immutable by default so remember that one transformation results in a new RDD of information
